@@ -6,7 +6,7 @@ def home(request):
     return HttpResponse("Task Dependency Tracker Backend is running")
 
 urlpatterns = [
-    path("", home),              # 👈 ADD THIS
+    path("", home),              
     path("admin/", admin.site.urls),
     path("api/", include("tasks.urls")),
 ]
